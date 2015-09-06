@@ -1,0 +1,46 @@
+root:$6$9sM4bCFT$4EMzUr3qBT6dzFG8FqG317692Cti8lAOCr032z3te.VSg4A2ovOwKM/P6yepLV.sF8GmqseH/dpuBH0jhieB20:0:0:root:/root:/bin/bash
+daemon:*:1:1:daemon:/usr/sbin:/bin/sh
+bin:*:2:2:bin:/bin:/bin/sh
+sys:*:3:3:sys:/dev:/bin/sh
+sync:*:4:65534:sync:/bin:/bin/sync
+games:*:5:60:games:/usr/games:/bin/sh
+man:*:6:12:man:/var/cache/man:/bin/sh
+lp:*:7:7:lp:/var/spool/lpd:/bin/sh
+mail:*:8:8:mail:/var/mail:/bin/sh
+news:*:9:9:news:/var/spool/news:/bin/sh
+uucp:*:10:10:uucp:/var/spool/uucp:/bin/sh
+proxy:*:13:13:proxy:/bin:/bin/sh
+www-data:*:33:33:www-data:/var/www:/bin/sh
+backup:*:34:34:backup:/var/backups:/bin/sh
+list:*:38:38:Mailing List Manager:/var/list:/bin/sh
+irc:*:39:39:ircd:/var/run/ircd:/bin/sh
+gnats:*:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/bin/sh
+nobody:*:65534:65534:nobody:/nonexistent:/bin/sh
+libuuid:!:100:101::/var/lib/libuuid:/bin/sh
+mysql:!:101:103:MySQL Server,,,:/nonexistent:/bin/false
+messagebus:*:102:106::/var/run/dbus:/bin/false
+colord:*:103:107:colord colour management daemon,,,:/var/lib/colord:/bin/false
+usbmux:*:104:46:usbmux daemon,,,:/home/usbmux:/bin/false
+miredo:*:105:65534::/var/run/miredo:/bin/false
+ntp:*:106:112::/home/ntp:/bin/false
+Debian-exim:!:107:113::/var/spool/exim4:/bin/false
+arpwatch:!:108:116:ARP Watcher,,,:/var/lib/arpwatch:/bin/sh
+avahi:*:109:117:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/bin/false
+beef-xss:*:110:118::/var/lib/beef-xss:/bin/false
+dradis:*:111:120::/var/lib/dradis:/bin/false
+pulse:*:112:121:PulseAudio daemon,,,:/var/run/pulse:/bin/false
+speech-dispatcher:!:113:29:Speech Dispatcher,,,:/var/run/speech-dispatcher:/bin/sh
+haldaemon:*:114:123:Hardware abstraction layer,,,:/var/run/hald:/bin/false
+sshd:*:115:65534::/var/run/sshd:/usr/sbin/nologin
+snmp:*:116:125::/var/lib/snmp:/bin/false
+iodine:*:117:65534::/var/run/iodine:/bin/false
+postgres:*:118:127:PostgreSQL administrator,,,:/var/lib/postgresql:/bin/bash
+redsocks:!:119:128::/var/run/redsocks:/bin/false
+stunnel4:!:120:129::/var/run/stunnel4:/bin/false
+statd:*:121:65534::/var/lib/nfs:/bin/false
+sslh:!:122:132::/nonexistent:/bin/false
+Debian-gdm:*:123:133:Gnome Display Manager:/var/lib/gdm3:/bin/false
+rtkit:*:124:134:RealtimeKit,,,:/proc:/bin/false
+saned:*:125:135::/home/saned:/bin/false
+test:$6$Xus9aYPj0N2FHq1r$on0qS.D93VefB2lzcXwXGu4zw/OI.OOnzoTB6VY.LfqjaHH6lPzdY7LQGXpPTkr60Sc5PN40AF1BIE9CP0Czc/:1000:1001:test,,,:/home/test:/bin/bash
+admin:$6$$izi2eyfIL0P.T.05kbqoNXQ47nxLswco2sCx5TpONcx2XBCLDU3Q8tssFgyEFnEtBCk/TtAz7Ux18ImRI8.PY0:1001:1002:admin,,,:/home/admin:/bin/bash
