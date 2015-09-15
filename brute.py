@@ -13,24 +13,35 @@ def cracking(hashpas, username, dictionary):
     dic = open (dictionary,'r');
     #Смотрим тип хэша
     ctype = hashpas.split("$")[1];
-    #Если тип хэша 6 то это SHA-512
+    
+   #Если тип хэша 6 то это SHA-512
     if ctype == "6":
-        print "[+] " + username + " тип хэша SHA-512 найдэн ..."
-        #Выдираем соль
-        salt = hashpas.split("$")[2];
-        #Собираем все вместе
-        insalt = "$" + ctype + "$" + salt + "$";
-        #Проходим по словарю
-        for word in dic.readlines():
-            #Удалям перенос строки
-            word=word.strip('\n');
-            #Хэшируем
-            cryptWord = crypt.crypt(word,insalt);
-            #Если хэши совпали то
-            if (cryptWord == hashpas):
-                print "[+] Найдэн !: " + username + " ====> " + word + "\n";
-
-                
+        print "[+] " + username + " тип хэша SHA-512 найдэн ...";
+    
+    #Если тип хэша 1 то это MD5
+    if ctype == "1":
+	print "[+] " + username + " тип хэша MD5 найдэн ...";
+    #Если тип хэша 5 то это SHA-1
+    if ctype == "5":
+	print "[+] " + username + " тип хэша SHA-1 найдэн ...";	
+		
+	
+    #Выдираем соль
+    salt = hashpas.split("$")[2];
+    #Собираем все вместе
+    insalt = "$" + ctype + "$" + salt + "$";
+    #Проходим по словарю
+    for word in dic.readlines():
+    	#Удалям перенос строки
+    	word=word.strip('\n');
+        #Хэшируем
+        cryptWord = crypt.crypt(word, insalt);
+        #Если хэши совпали то
+        if (cryptWord == hashpas):
+        	print "[+] Найдэн !: " + username + " ====> " + word + "\n";
+	
+	
+            
 #Главная функция
 def main():
     #Создаем парсер

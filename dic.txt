@@ -6,5 +6,6 @@ iloveyou
 princess
 1234567
 rockyou
+msfadmin
 12345678
 abc123
