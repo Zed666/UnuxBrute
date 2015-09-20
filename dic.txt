@@ -8,4 +8,5 @@ princess
 rockyou
 msfadmin
 12345678
+toor
 abc123
